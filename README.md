@@ -13,7 +13,7 @@ Countdown Timer is a project that allows users to select a date and time for an 
 
 Go to 
 
-1- Select the date and time of the event using the date and time pickers.
-2- Click the "Start" button to start the countdown.
-3- The timer will show the remaining days, hours, minutes, and seconds until the event.
-4- To cancel the countdown, click the "Cancel" button.
+1. Select the date and time of the event using the date and time pickers.
+2. Click the "Start" button to start the countdown.
+3. The timer will show the remaining days, hours, minutes, and seconds until the event.
+4. To cancel the countdown, click the "Cancel" button.
