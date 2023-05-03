@@ -1,0 +1,321 @@
+/* Connect Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+html {
+    /* Prevents horizontal by including any border/padding into the width.
+    i.e. width=100px will include the broder and padding width. No extra width or padding will be added */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+/************************************************************* */
+/* Navbar styling*/
+/************************************************************ */
+.navbar {
+    background-color: rgba(245, 183, 153, 0.9);
+    height: 80px;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 40px;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.navbar:hover {
+    background-color: rgba(245, 183, 153, 1);
+}
+
+/* Logo */
+.logo-container {
+    width: 210px;
+    height: 100px;
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 80%;
+    size: cover;
+}
+
+/* Style for date and time picker */
+.date-time-picker-container {
+    margin-left: 6vw;
+    color: #1d3e68;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for date picker */
+input[type="date"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #695f7e;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #273661;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 10px;
+} 
+  
+/* Style for time picker */
+input[type="time"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #695f7e;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #273661;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+/* Submit Button */
+.submit {
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: #F5756B;
+    color: white;
+    padding: 0.3em 1.5em;
+    margin-bottom: 10px;
+    transition: transform 0.1s ease;
+    transition: font-size 0.1s ease;
+}
+
+.submit:hover {
+    font-size: 1.3rem;
+    color: rgb(248, 244, 244);
+    cursor: pointer;
+}
+
+.submit:active {
+    transform: translateY(3px);
+}
+
+
+
+/************************************************************* */
+/* Countdown Container styling*/
+/************************************************************ */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.countdown-container {
+    /* position div */
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* Card */
+    min-width: 70%;
+    max-height: 40%;
+    padding: 20px 2px;
+    background-color: rgba(245, 183, 153, 0.8);
+    border-radius: 10%;
+    box-shadow: 0 0 40px rgba(233, 231, 231, 0.5);
+
+    /* Font and Color styling */
+    color: #273661;
+    font-size: 2.6rem;
+}
+
+.countdown-container:hover {
+    background-color: rgba(245, 183, 153, 1)
+}
+
+/************************************************************* */
+/* Countdown Object styling*/
+/************************************************************ */
+.counter-obj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 8%;
+
+    /* border: 2px solid white; */
+}
+
+.counter-obj span {
+    font-size: 9rem;
+    font-weight: 700;
+    margin-bottom: -50px;
+    border-bottom: 3px solid #695f7e;
+
+    /* border: 2px solid white; */
+}
+
+.counter-obj h3 {
+    font-weight: 500;
+    color: #1d3e68;
+    margin-bottom: 10px;
+}
+
+.days-container {
+    margin-left: 1%;
+}
+
+.seconds-container{
+    color: #b43e03;
+}
+
+/************************************************************* */
+/* Confetti Object styling*/
+/************************************************************ */
+h1 {
+    position: absolute;
+    min-width: 50%;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 6rem;
+    font-family: sans-serif;
+    background-color: rgba(245, 183, 153, 0.85);
+    color: #1d3e68;
+    border-radius: 50px;
+}
+  
+canvas {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+/************************************************************* */
+/* Mobile Friendly*/
+/************************************************************ */
+@media only screen and (max-width: 767px) {
+
+    /* Navbar */
+    .navbar {
+        height: fit-content;
+        max-width: 85%;
+        flex-direction: column;
+    }
+
+    /* Logo */
+    .logo-container {
+        width: 150px;
+        height: 40px;
+        margin-left: 5vw;
+        margin-top: 10px;
+
+        /* border: 2px solid white; */
+    }
+
+    .logo-container img {
+        margin-top: 5px;
+    }
+
+    /* Date and Time Picker */
+    .date-time-picker-container {
+        min-height: 150px;
+        margin-left: 2vw;
+        margin-top: 1vw;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        /* border: 2px solid white; */
+    }
+
+    .submit {
+        padding: 0.5em 2.1em;
+        margin: 0;
+    }
+
+    .submit:hover {
+        font-size: 1.2rem;
+    }
+
+    /* Style for date picker */
+    input[type="date"] {
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid #695f7e;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #273661;
+        padding: 6px 6px;
+        margin: auto;
+    } 
+    
+    /* Style for time picker */
+    input[type="time"] {
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid #695f7e;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        color: #273661;
+        padding: 6px 10px;
+        margin: auto;
+    }
+
+    /* Countdown Container */
+    .wrapper {
+        height: auto;
+    }
+
+    .countdown-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 50%;
+        max-height: 60%;
+        padding: 5px;
+    }
+
+    /* Countdown Object */
+    .counter-obj {
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    .counter-obj span {
+        font-size: 4rem;
+        margin-bottom: -10px;
+    }
+
+    .counter-obj h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .seconds-container {
+        margin-left: 20px;
+        color: #b43e03;
+    }
+
+    h1 {
+        margin-top: 10vh;
+        font-size: 3rem;
+        min-width: 70%;
+    }
+}

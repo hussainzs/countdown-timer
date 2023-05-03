@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FontAwsome Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicon using Google service -->
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Countdown</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="logo-container">
+        <img src="logo.png" alt="logo" />
+      </div>
+
+      <!-- Date and Hour Picker -->
+      <div class="date-time-picker-container">
+        <div class="date-container">
+          <label for="date">Select a date :</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div class="time-container">
+          <label for="time">Select a time :</label>
+          <input type="time" id="time" name="time" />
+        </div>
+        <!-- Submit Button -->
+        <button class="submit" id="submit-btn">Start</button>
+      </div>
+    </div>
+    <!-- Countdown Container Wrapper -->
+    <div class="wrapper" id="cc">
+      <!-- Countdown Container -->
+      <div class="countdown-container">
+        <div class="days-container counter-obj" id="days-container">
+          <span>00</span>
+          <h3>Days</h3>
+        </div>
+        <div class="hours-container counter-obj" id="hours-container">
+          <span>0</span>
+          <h3>Hours</h3>
+        </div>
+        <div class="minutes-container counter-obj" id="minutes-container">
+          <span>0</span>
+          <h3>Minutes</h3>
+        </div>
+        <div class="seconds-container counter-obj" id="seconds-container">
+          <span>00</span>
+          <h3>Seconds</h3>
+        </div>
+      </div>
+    </div>
+
+    <!--Script-->
+    <script src="script.js"></script>
+  </body>
+</html>
