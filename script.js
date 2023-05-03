@@ -164,7 +164,7 @@ function confetti_runner() {
 
 // Celebration Confetti
 /**
- * source for confetti script: https://codepen.io/jonathanbell/pen/OvYVYw
+ * confetti script from: https://codepen.io/jonathanbell/pen/OvYVYw
  */
 function confetti_script() {
   let W = window.innerWidth;
