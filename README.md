@@ -11,7 +11,7 @@ Countdown Timer is a project that allows users to select a date and time for an 
 
 ##How to Use the countdown timer
 
-Go to https://hussainzs.github.io/countdown-timer/ or clone the repository and run the index.html
+Go to https://hussainzs.github.io/custom-countdown/ or clone the repository and run the index.html
 
 1. Select the date and time of the event using the date and time pickers.
 2. Click the "Start" button to start the countdown.
